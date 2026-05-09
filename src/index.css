@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=JetBrains+Mono:wght@400;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --color-paper: #f4f4ee;
+  --color-paper2: #f4ecdc;
+  --color-ink: #2b2a26;
+  --color-ink-soft: #5d5a52;
+  --color-pink: #f4c8c4;
+  --color-peach: #f5d8b8;
+  --color-butter: #f3e2a3;
+  --color-mint: #c8e0c4;
+  --color-sky: #c4d8ea;
+  --color-lilac: #d8cae6;
+  --color-coral: #e8a59c;
+  --color-sage: #a5b89e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: linear-gradient(180deg, rgba(196, 216, 234, 0.25), transparent 30%), var(--color-paper);
+  color: var(--color-ink);
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+.font-serif {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+button:focus-visible,
+a:focus-visible,
+[role='button']:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
